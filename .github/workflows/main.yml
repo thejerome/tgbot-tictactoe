@@ -4,11 +4,12 @@ on:
 
   workflow_dispatch:
 
-steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE,
-    # so your job can access it
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
     - uses: actions/checkout@v2
-# Runs a single command using the runners shell
     - name: Yandex Cloud CR "Login" Action for GitHub Actions
       uses: yc-actions/yc-cr-login@v0.1-alpha
       with:
