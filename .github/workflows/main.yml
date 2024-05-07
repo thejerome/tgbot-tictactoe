@@ -11,11 +11,11 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4.1.2
-#    - name: Put token to properties
-#      run: 'echo "$TG_PROPS" > src/main/resources/tg.properties'
-#      shell: bash
-#      env:
-#        TG_PROPS: ${{secrets.TG_PROPS}}
+    - name: Put token to properties
+      run: 'echo "$TG_PROPS" > src/main/resources/tg.properties'
+      shell: bash
+      env:
+        TG_PROPS: ${{secrets.TG_PROPS}}
     - name: Echo tgprops
       run: 'cat src/main/resources/tg.properties'
       shell: bash
