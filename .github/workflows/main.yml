@@ -34,7 +34,7 @@ jobs:
       with:
         yc-sa-json-credentials: ${{ secrets.YC_SA_JSON_CREDENTIALS }}
         container-name: efimchik-ttt-bot
-        folder-id: bbanrmjs7u0rdc2khp4g
+        folder-id: b1gikirjh8mf07r1rhf9
         revision-service-account-id: ajemh8i962f00k2a71m4
         revision-cores: 1
         revision-memory: 1024Mb
