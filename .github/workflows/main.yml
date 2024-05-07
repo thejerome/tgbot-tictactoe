@@ -15,7 +15,7 @@ jobs:
       run: 'echo "$TG_PROPS" > src/main/resources/tg.properties'
       shell: bash
       env:
-        SSH_KEY: ${{secrets.TG_PROPS}}
+        TG_PROPS: ${{secrets.TG_PROPS}}
     - name: Yandex Cloud CR "Login" Action for GitHub Actions
       uses: yc-actions/yc-cr-login@v2.0.0
       with:
